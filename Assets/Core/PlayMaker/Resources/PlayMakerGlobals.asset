@@ -77,3 +77,5 @@ MonoBehaviour:
   - PHOTON / ON PHOTON INSTANTIATE
   - play_bttn_action
   - play bttn pressed
+  - attack_test
+  - die
