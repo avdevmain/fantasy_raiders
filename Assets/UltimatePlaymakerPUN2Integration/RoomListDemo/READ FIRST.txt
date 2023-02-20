@@ -1,0 +1,66 @@
+Warning:
+Unlike the other demo scenes, in order to use the Room List Demo and the 'Playmaker Room List Proxy', 
+you must import the 'Array Maker' package from the playmaker Ecosystem.
+
+These instructions are easier to read at https://googly-eyes.gitbook.io/the-ultimate-playmaker-multiplayer-template/
+
+Installation Instructions:
+-Make sure Playmaker is fully installed
+-Make sure PUN 2 is fully installed
+-In the Playmaker Ecosystem, install 'Array Maker'.
+
+
+Hierarchy GameObjects Worth Noting:
+-Room List Canvas>Purple Panel: This is the parent of the entries that will be created from the active rooms discovered.
+-Playmaker Photon Room List Proxy (Prefab): This MUST be in your scene if you want to get your PUN2 room list. 
+-Logic: This GameObject houses the 'Connection' FSM, which is the only FSM in this scene.
+
+Playmaker Photon Room List Proxy:
+This is a prefab you can use in any of your projects to help you retrieve the PUN2 room list. It contains three scrips:
+-Playmaker Photon Proxy Room List: Believe it or not, for a while, Playmaker has had an asset called 'Playmaker Photon Room List Proxy'. 
+It stored the room list in a Dictionary, but Playmaker users didn't have any native way to access the list. 
+So, I've modified the script (and renamed it to avoid conflicts), to build the room list in a Playmaker Array List Proxy (which we can easily access with Playmaker actions).
+
+Notice the 'Proxy' GameObject variable. In our demo, we have our Playmaker Array List Proxy on the same GameObject. 
+We simply dragged and dropped the component into this variable field. I would recommend if you set this up in your own projects, to do it the same way.
+
+Playmaker Array List Proxy: You MUST have installed the 'Array Maker' package from the Ecosystem (as described at the top of this page). 
+Without Array Maker, this component will show as missing.
+
+This component holds the room list. You can also expand the 'Playmaker Events' property, to enable 'Playmaker Events'. 
+If you do, you can input strings for FSM events you want to send when items are Added, Removed, or Changed (set) in/to the list. 
+The local only checkbox didn't seem to work for me. I had to keep it unchecked for those events to work (I don't have them set up in this demo)
+
+Comment: This last script isn't really a script. It just allows me to put some visible text in the inspector 
+to show you how the room list strings are stored in the Play Maker Array List Proxy.
+
+Logic
+The 'Logic' GameObject houses the only FSM in the scene (Connection).
+
+We start out by connecting to the Game Server. You could use either 'Connect Using Settings' like the example above (and in the Demo Scene), or 'Connect to Best Cloud Server' 
+would also work.
+Once the 'Connect to Master' event triggers, we join a lobby. You can keep the 'Pun Join Lobby' action 'as is'. 
+You don't need to make any changes to it at all. Being in a lobby is required in order to receive room list updates.
+Once we connect to the Lobby, we destroy the children in the 'Purple Panel'. Why do we do this? Well, you could create a global event on the 'Clear Old Entries' 
+state that is triggered when the Play Maker Array List Proxy gets updated (remember we talked about that above). Why would we do this? 
+Well, while a player is looking at the room list, it will update if the room list updates. To avoid duplicate list entries, we delete them all, and start from scratch.
+We are now in the 'Get Room List Data' state in the FSM pictured above. We are using a custom action I created called 'Pun Room List Get Room Data'. 
+
+For the 'Room List Proxy' variable, we simple drag the Room List Proxy in from the Hierarchy.
+
+The 'Index' should be a variable, so you can 'int add' in the next state to iterate through the list.
+
+'Room Name' is the name of the room.
+
+Player Count is the number of players currently in that room.
+
+Max Players is the max player count set in the room properties (will show as zero if no max count was set when room created)
+
+'isOpen' is a bool if the room is open or not (if false don't give the player a join button, or don't include it in the list at all)
+
+'Failure Event' can also be used to let you know when you've reached the end of the room list.
+
+In the next state we create the room list entry to be displayed on screen. There are a lot ofactions in this state. But, its fairly simple logic. 
+We first create the 'Entry' GameObject from a prefab.  I then set the Scale to 1,1,1 because for some reason Unity's UI system always wants
+to change the scale to something weird. Then we save child 0, child 1, and child 3 as their respective GameObjects (roomName, PlayersCount, JoinButton). 
+The rest is pretty self explanatory if you take a look at the actions. But, don't hestitate to reach out to me in Discord if something is confusing.

@@ -1,0 +1,39 @@
+﻿Go to the Following URL to see a better version of the documentation:
+https://googly-eyes.gitbook.io/the-ultimate-playmaker-multiplayer-template/
+
+
+The Hierarchy
+
+This scene is the same as our main 2D scene. The only new object in the Hierarchy is the 'Voice Manager' GameObject.
+
+Voice Manager
+The Voice manager is an empty GameObject with three Photon components added to it.
+The first is the 'Photon Voice Network' component. Most of the properties are self explanatory. 
+You'll want to change all the log levels to 'ERROR', or it will flood the console. This component is the main "brains" behind voice chat.
+
+Recorder
+This component controls when, how, and who. You'll want to make sure 'transmit enabled' is checked. 
+It is not by default. If you want a push-to-talk system, this is the property you would set 'true' for transmit, and 'false' for not transmit.
+Drag and drop this Recorder component into the 'Primary Recorder' on the 'Photon Voice Network' component (the demo scene should already be set up this way).
+
+Audio Changes Handler
+This component is useful to handle audio device and config changes. 
+
+Where's the Logic?
+In the 2D Voice demo scene, all the logic is on the player. The player is located in the resources folder and is called PlayerPrefabForMultiplayer_2D_w_Voice.
+
+The Player
+The Player Prefab differs a bit from the other 2D Player prefab. In the hierarchy we've added two new GameObjects.
+
+The 'Speaker' is an empty GameObject. Position it where you want the positional audio of the player speaking to come from. 
+When you add the 'Speaker' component, the 'Audio Source' component will be added automatically.
+
+The 'Indicator' is a sprite to display above the player's head when audio is detected from their mic and transmitted over the network.
+
+On the Player parent GameObject, we've added a new component. It is a 'Photon Voice View'. 
+Next we will talk about the new FSM we used to create the Voice Indicator above the player's head. 
+In that FSM, we are getting properties from this component.
+
+The 'isRecording Indicator' FSM (Located on the Player)
+This is a very simple FSM that gets the 'isRecording' bool from the 'Photon Voice View'. 
+It then uses that bool to set the 'enabled' property of the sprite renderer on the 'Indicator'.

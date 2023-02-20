@@ -865,12 +865,12 @@ GameObject:
   - component: {fileID: 1162393492}
   - component: {fileID: 1162393491}
   - component: {fileID: 1162393490}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1162393490
 MeshCollider:
@@ -1337,12 +1337,12 @@ GameObject:
   - component: {fileID: 1709189431}
   - component: {fileID: 1709189430}
   - component: {fileID: 1709189429}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1709189429
 BoxCollider:
@@ -1432,6 +1432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1820324713}
   - component: {fileID: 1820324712}
+  - component: {fileID: 1820324714}
   m_Layer: 0
   m_Name: Game Master
   m_TagString: Untagged
@@ -1976,7 +1977,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0101
+        actionIsOpen: 0001
         actionStartIndex: 0000000002000000
         actionHashCodes: d97b72025797fc02
         unityObjectParams: []
@@ -2142,7 +2143,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: {fileID: 1002667322917500640, guid: bfddbf62aee538045ab961a767adcf22,
+        value: {fileID: 1002667322917500640, guid: ff342cf950d8b564392e331e21b35757,
           type: 3}
       - useVariable: 1
         name: spawn
@@ -2239,3 +2240,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820324714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820324711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43272920fe1262458e8316b62277225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

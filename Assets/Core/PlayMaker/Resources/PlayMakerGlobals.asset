@@ -79,3 +79,10 @@ MonoBehaviour:
   - play bttn pressed
   - attack_test
   - die
+  - die torso
+  - die head
+  - attack_test_melee
+  - game started
+  - attack_anim
+  - attack_melee_king
+  - attack_melee_knight

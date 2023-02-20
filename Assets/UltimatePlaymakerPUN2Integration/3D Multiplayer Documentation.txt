@@ -1,0 +1,41 @@
+﻿Go to the Following URL to see a better version of the documentation:
+https://googly-eyes.gitbook.io/the-ultimate-playmaker-multiplayer-template/
+
+Install the required Dependencies First:
+The latest version of Unity 2020 LTS is recommended (i.e. 2020.3.29f1)
+The latest version of Playmaker (1.9.4.f2)
+Install 'Input System' from Unity's Package Manager (Version 1.3.0 or later)
+Install the latest version of PUN 2 FREE from the Unity Asset Store.
+Download and Install the Playmaker Ecosystem Package.
+Once you've installed the Playmaker Ecosystem Package, use it and search PUN 2 and install the PUN 2 package.
+Install the TextMeshPro UGUI Playmaker Actions
+
+Install The Ultimate Playmaker Multiplayer Template Package
+You can install the whole package if you want to, but if you're only going to be working with 3D, it would be better if you didn't install the assets that are for 2D or VR.
+Import The Ultimate Playmaker Multiplayer Template Package, but uncheck the following items.
+Resources>CollectiblePrefab2D.prefab
+PlayerPrefabForMultiplayer_2D.prefab
+VR_PlayerPrefabForMultiplayer.prefab
+The Whole 'Samples' folder.
+Scenes>2D Demo.unity
+Scenes>VR Demo.unity
+
+Create your Photon App ID
+Go to https://www.photonengine.com and create an account if you haven't already.
+Go to your Dashboard by clicking 'Dashboard' in the top right of the webpage.
+From your Dashboard, click the 'Create a New App' button.
+Set 'Photon Type' to 'PUN'.
+Create a name for your app. 
+Click 'create' (the rest of the fields on this page are optional.
+
+Put your App ID into your Unity Photon Server Settings
+From your Photon Engine Dashboard, find the App you created in the previous section. The app ID should be partially displayed under the title of your app. Click on it to view the full ID. Use CTRL+C on your keyboard to copy the app ID.
+Inside your Unity Project, go to Window>Photon Unity Networking>Highlight Server Settings (or you can use hotkeys CTRL+Shift+ALT+P)
+Paste your App ID (using CTRL+V on your keyboard) into the 'App ID PUN' field. The only other fields you should mess with are the 'App Version' if you want to (but its not necessary), Fixed Region, and Dev region fields. While testing, I like to keep the Fixed Region and Dev regions set to my region, to ensure all my players end up in the same room while testing. Find the region codes here.
+
+Play the Demo Scene
+You should have everything you need now to play the '3D Demo Scene' (search for it in your project tab).
+Hit 'Play' in the editor.
+Click a button to choose a 'public' or 'private' room.
+Use WASD to move and space key to jump.
+

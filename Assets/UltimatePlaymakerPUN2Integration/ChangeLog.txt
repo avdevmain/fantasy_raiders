@@ -1,0 +1,16 @@
+﻿Change Log: Updated October 28, 2022
+
+1.0.1
+Updated the action "PlayMakerPhotonProxyRoomList". It was improperly sending a 'failure' event when expected behaviors were happening.
+
+1.0
+Changed release version
+Added room list management with custom Playmaker Actions
+Added photon chat demo with custom Playmaker Actions
+
+0.1
+Changed release version.
+Added Voice Chat Demo with Voice Indicator
+
+0.0.1
+First release
