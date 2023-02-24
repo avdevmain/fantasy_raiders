@@ -155,7 +155,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle
         linkStyle: 0
         linkConstraint: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000010100
+        actionIsOpen: 000000000000000000
         actionStartIndex: 0000000001000000060000000b0000001000000014000000180000001e00000025000000
         actionHashCodes: 13227100d9b552026ba593016ba5930173ea9b0273ea9b02605323015552ad059ff80c02
         unityObjectParams: []
@@ -528,7 +528,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle
         linkStyle: 0
         linkConstraint: 0
@@ -930,14 +930,390 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 00000000010000000200000000000000030000000000000001000000000000000000000000000000000000000200000001000000010000000100000001000000040000000500000000000000020000000600000007000000010000000300000000000000010000000200000002000000030000000300000004000000050000000600000004000000050000000700000000000000060000000000000001000000020000000400000008000000080000000300000001000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000001000000000000000000000000000000
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 559.0703
+        y: 113.234375
+        width: 135.33334
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 1
+        toState: Idle
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventStringData
+        - HutongGames.PlayMaker.Actions.StringSplit
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ConvertStringToVector3
+        - HutongGames.PlayMaker.Actions.ConvertStringToVector3
+        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SetVelocity
+        - HutongGames.PlayMaker.Actions.DestroyObject
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000000
+        actionStartIndex: 0000000001000000060000000b0000001000000014000000180000001e00000025000000
+        actionHashCodes: 13227100d9b552026ba593016ba5930173ea9b0273ea9b02605323015552ad059ff80c02
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: grenade_projectile
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 2020866108288363730, guid: f4a1508c9bcfec14499180837452d5b3,
+            type: 3}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: new_bullet
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: new_bullet
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: new_bullet
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: receivedString
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: receivedString
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: '!'
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: posString
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vector3\([x],[y],[z]\)
+        - useVariable: 1
+          name: rotString
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vector3\([x],[y],[z]\)
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: posString
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: rotString
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: paramsArray
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 4
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: paramsArray
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 4
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: paramsArray
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 4
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 15
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
+        fsmIntParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: posVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: rotVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: posVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: rotVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        byteData: 000000000100000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1200000012000000120000001100000012000000290000002900000010000000270000000100000017000000290000001000000027000000010000001700000012000000120000001c0000000100000012000000120000001c000000010000001300000013000000130000001c0000001c00000013000000140000001c0000000f0000000f0000000f0000000700000001000000130000000f00000011000000
+        paramName:
+        - getStringData
+        - stringToSplit
+        - separators
+        - trimStrings
+        - trimChars
+        - stringArray
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - source
+        - format
+        - storeResult
+        - everyFrame
+        - source
+        - format
+        - storeResult
+        - everyFrame
+        - gameObject
+        - parent
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - gameObject
+        - delay
+        - detachChildren
+        paramDataPos: 00000000010000000200000000000000030000000000000001000000000000000000000000000000000000000200000001000000010000000100000001000000040000000500000000000000020000000600000007000000010000000300000000000000010000000200000002000000030000000300000000000000040000000000000001000000020000000400000008000000040000000300000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000001000000000000000000000000000000
     events:
     - name: attack_test
       isSystemEvent: 0
       isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: attack_melee_knight
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: attack_grenadier
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions:
@@ -955,6 +1331,15 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 3
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: attack_grenadier
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 1
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
@@ -1027,6 +1412,13 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 2020866108288363730, guid: c369e4f751f828f4d99c5f0e8845ac1f,
           type: 3}
+      - useVariable: 1
+        name: grenade_projectile
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 2020866108288363730, guid: f4a1508c9bcfec14499180837452d5b3,
+          type: 3}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -1047,7 +1439,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1058,7 +1450,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -1086,7 +1478,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 0
+    handleFixedUpdate: 1
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0

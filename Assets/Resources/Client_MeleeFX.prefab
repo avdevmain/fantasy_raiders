@@ -9948,7 +9948,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 7
         linkStyle: 0
         linkConstraint: 0
@@ -10163,7 +10163,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 9
         linkStyle: 0
         linkConstraint: 0
@@ -10378,7 +10378,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: State 11
         linkStyle: 0
         linkConstraint: 0
@@ -10583,7 +10583,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: die torso
       isSystemEvent: 0
       isGlobal: 1
@@ -10693,7 +10693,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1

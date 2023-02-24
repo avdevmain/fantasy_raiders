@@ -438,7 +438,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Disable Respawn HUD
         linkStyle: 0
         linkConstraint: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Next SpawnPoint
         linkStyle: 0
         linkConstraint: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle
         linkStyle: 0
         linkConstraint: 0
@@ -798,7 +798,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Get Next SpawnPoint
         linkStyle: 0
         linkConstraint: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Idle
         linkStyle: 0
         linkConstraint: 0
@@ -967,7 +967,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: die
       isSystemEvent: 0
       isGlobal: 1

@@ -86,3 +86,8 @@ MonoBehaviour:
   - attack_anim
   - attack_melee_king
   - attack_melee_knight
+  - join_room
+  - FINISHED
+  - attack_grenadier
+  - join
+  - zone_damage

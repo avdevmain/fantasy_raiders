@@ -269,6 +269,14 @@ namespace HutongGames.PlayMaker.Pun2
            
            PlayMakerUtils.SendEventToGameObject(null,this.gameObject,globalEventName,true);
         }
+
+        [PunRPC]
+        void rpc_s(string globalEventName, string stringData)
+        {
+            Fsm.EventData.StringData = stringData;
+            
+            PlayMakerUtils.SendEventToGameObject(null, this.gameObject, globalEventName,true);
+        }
         
         #endregion
 
