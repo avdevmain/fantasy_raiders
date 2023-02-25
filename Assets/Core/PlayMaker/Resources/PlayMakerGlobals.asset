@@ -91,3 +91,4 @@ MonoBehaviour:
   - attack_grenadier
   - join
   - zone_damage
+  - skill_anim
