@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: melee_Hit_torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,9 +201,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7814113558373889949}
     m_Modifications:
+    - target: {fileID: 1477966038841352, guid: 0b76d277096f4dc4fad0065918f5c9d3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1493123572548342, guid: 0b76d277096f4dc4fad0065918f5c9d3, type: 3}
       propertyPath: m_Name
       value: SwordHitMiniRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493123572548342, guid: 0b76d277096f4dc4fad0065918f5c9d3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741778894566216, guid: 0b76d277096f4dc4fad0065918f5c9d3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4457386425015312, guid: 0b76d277096f4dc4fad0065918f5c9d3, type: 3}
       propertyPath: m_RootOrder

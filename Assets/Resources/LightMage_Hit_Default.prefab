@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LightMage_Hit_Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,6 +204,22 @@ PrefabInstance:
     - target: {fileID: 101082, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
       propertyPath: m_Name
       value: MagicSoftExplosionYellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 101082, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 148484, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 168450, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 174382, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 451950, guid: 6b88dc69c37f0ac47825973a9c9dcb1a, type: 3}
       propertyPath: m_RootOrder

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1683884831709624259}
   - component: {fileID: 3542310185558168533}
   - component: {fileID: 7144973704812392051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CenterGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4821,7 +4821,7 @@ GameObject:
   - component: {fileID: 1226013925665195929}
   - component: {fileID: 3534378829630772765}
   - component: {fileID: 6713481636324171721}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MagicNova
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9648,7 +9648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LightMage_Skill_fx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9843,7 +9843,7 @@ GameObject:
   - component: {fileID: 2165778098355523597}
   - component: {fileID: 1972468999742436865}
   - component: {fileID: 2441232429749473020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MagicChargeOrbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14671,7 +14671,7 @@ GameObject:
   - component: {fileID: 7460949140963646745}
   - component: {fileID: 4822671714840060284}
   - component: {fileID: 5515189959568483473}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CenterSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19472,7 +19472,7 @@ GameObject:
   - component: {fileID: 3206968145847906587}
   - component: {fileID: 6858742166178564820}
   - component: {fileID: 1347475444532167587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MagicNovaYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

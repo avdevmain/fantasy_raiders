@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grenadier_hit_default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 9121488761727222036}
   - component: {fileID: 8897805924691951827}
   - component: {fileID: 4842525484560274070}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExplosionFireballGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5148,7 +5148,7 @@ GameObject:
   - component: {fileID: 6908131125863752115}
   - component: {fileID: 5643436503830476423}
   - component: {fileID: 3519917813616516363}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9958,7 +9958,7 @@ GameObject:
   - component: {fileID: 5827573333550302331}
   - component: {fileID: 3856776892398395627}
   - component: {fileID: 7258973501586940096}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FireCurve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14777,7 +14777,7 @@ GameObject:
   - component: {fileID: 1822651520118379136}
   - component: {fileID: 7129754255080285835}
   - component: {fileID: 1059490206636588222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19569,7 +19569,7 @@ GameObject:
   - component: {fileID: 4562240515255130509}
   - component: {fileID: 2259749579898132643}
   - component: {fileID: 1327343735675809513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

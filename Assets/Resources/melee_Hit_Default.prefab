@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2321317324999556103}
   - component: {fileID: 1930701608511138874}
   - component: {fileID: 2412693204286911811}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4820,7 +4820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: melee_Hit_Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5015,7 +5015,7 @@ GameObject:
   - component: {fileID: 1435201819262747988}
   - component: {fileID: 790298354715237086}
   - component: {fileID: 6822043611888018977}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SwordHitMiniBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9827,7 +9827,7 @@ GameObject:
   - component: {fileID: 2190310577351592575}
   - component: {fileID: 2632249336145866711}
   - component: {fileID: 230300742322340389}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

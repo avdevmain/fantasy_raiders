@@ -93,3 +93,6 @@ MonoBehaviour:
   - zone_damage
   - skill_anim
   - grenadier_skill
+  - idle_anim
+  - walk_anim
+  - skill_fx

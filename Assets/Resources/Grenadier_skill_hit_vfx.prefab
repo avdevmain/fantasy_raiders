@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2044912353975804018}
   - component: {fileID: 5679803865147222437}
   - component: {fileID: 2621479595206341507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4805,7 +4805,7 @@ GameObject:
   - component: {fileID: 2494718813813335282}
   - component: {fileID: 2169805117294532797}
   - component: {fileID: 5387347967874121136}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LiquidExplosionAcid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9732,7 +9732,7 @@ GameObject:
   - component: {fileID: 5139640315273135064}
   - component: {fileID: 1923203783785597289}
   - component: {fileID: 8392614757800132450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grenadier_skill_hit_vfx
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -10132,7 +10132,7 @@ GameObject:
   - component: {fileID: 6720228673481065759}
   - component: {fileID: 2985973632598187559}
   - component: {fileID: 780902272968649986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InnerSplash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14942,7 +14942,7 @@ GameObject:
   - component: {fileID: 1175591129916901778}
   - component: {fileID: 3251736777653192315}
   - component: {fileID: 8907053327952323511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7814113558373889949}
   - component: {fileID: 1276085755777172241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: melee_Hit_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,9 +201,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7814113558373889949}
     m_Modifications:
+    - target: {fileID: 130044, guid: 4889039938a567444827eafcfbc2b267, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 135678, guid: 4889039938a567444827eafcfbc2b267, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 150526, guid: 4889039938a567444827eafcfbc2b267, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 153482, guid: 4889039938a567444827eafcfbc2b267, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 176804, guid: 4889039938a567444827eafcfbc2b267, type: 3}
       propertyPath: m_Name
       value: SwordHitRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 176804, guid: 4889039938a567444827eafcfbc2b267, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400998, guid: 4889039938a567444827eafcfbc2b267, type: 3}
       propertyPath: m_RootOrder
