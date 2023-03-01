@@ -96,3 +96,4 @@ MonoBehaviour:
   - idle_anim
   - walk_anim
   - skill_fx
+  - hit_anim
