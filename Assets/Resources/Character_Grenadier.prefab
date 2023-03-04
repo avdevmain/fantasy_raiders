@@ -1177,7 +1177,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -1205,7 +1205,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 0
+    handleFixedUpdate: 1
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
@@ -5135,7 +5135,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -5776,7 +5776,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -6938,7 +6938,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -7291,7 +7291,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010100
-        actionIsOpen: 00000000
+        actionIsOpen: 00000100
         actionStartIndex: 00000000070000000d00000013000000
         actionHashCodes: 5552ad0519219405e3e02c035797fc02
         unityObjectParams: []
@@ -7301,7 +7301,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 4138471995828164436, guid: 325f74ca0f86f9346a9b51611fe9cae5,
+          value: {fileID: 4138471995828164436, guid: 86a7f41e1faa4814588f607a77c87c2c,
             type: 3}
         - useVariable: 0
           name: 
@@ -7566,7 +7566,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!1 &1354087744110245731
 GameObject:
   m_ObjectHideFlags: 0

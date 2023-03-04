@@ -97,3 +97,6 @@ MonoBehaviour:
   - walk_anim
   - skill_fx
   - hit_anim
+  - basic_rock_destroyed
+  - basic_crate_destroyed
+  - basic_box_destroyed

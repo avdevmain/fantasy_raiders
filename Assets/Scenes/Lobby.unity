@@ -2626,7 +2626,7 @@ PrefabInstance:
     - target: {fileID: 7028944682468919087, guid: 6b56d6f0e5a7d7a478359e922d69e5ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7028944682468919087, guid: 6b56d6f0e5a7d7a478359e922d69e5ea,
         type: 3}
@@ -2742,6 +2742,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.DontDestroyOnLoad
         - HutongGames.PlayMaker.Actions.DontDestroyOnLoad
         - HutongGames.PlayMaker.Actions.DontDestroyOnLoad
+        - HutongGames.PlayMaker.Actions.DontDestroyOnLoad
         - HutongGames.PlayMaker.Pun2.Actions.PunSetAutomaticallySyncScene
         - HutongGames.PlayMaker.Pun2.Actions.PunConnectUsingSettings
         customNames:
@@ -2752,10 +2753,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01000000010100
-        actionStartIndex: 00000000010000000200000003000000040000000500000006000000
-        actionHashCodes: 8d4bb5038d4bb5038d4bb5038d4bb5038d4bb50362f952038c265404
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0100000001010100
+        actionStartIndex: 0000000001000000020000000300000004000000050000000600000007000000
+        actionHashCodes: 8d4bb5038d4bb5038d4bb5038d4bb5038d4bb5038d4bb50362f952038c265404
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2799,6 +2801,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1188766349}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2076958220}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2839,8 +2849,9 @@ MonoBehaviour:
         customTypeSizes: 01000000
         customTypeNames:
         - HutongGames.PlayMaker.Pun2.Actions.PunActionHeader
-        paramDataType: 1400000014000000140000001400000014000000110000001100000017000000170000002800000001000000
+        paramDataType: 140000001400000014000000140000001400000014000000110000001100000017000000170000002800000001000000
         paramName:
+        - gameObject
         - gameObject
         - gameObject
         - gameObject
@@ -2852,8 +2863,8 @@ MonoBehaviour:
         - willNotProceed
         - header
         - NetworkOperationPending
-        paramDataPos: 0000000001000000020000000300000004000000000000000100000000000000010000000000000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 000000000100000002000000030000000400000005000000000000000100000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Join lobby
       description: 
       colorIndex: 3
@@ -5398,7 +5409,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0001
+        actionIsOpen: 0000
         actionStartIndex: 0000000005000000
         actionHashCodes: b2cf1000b2cf1000
         unityObjectParams: []
@@ -6939,7 +6950,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101010101010101
-        actionIsOpen: 00010000000100000101
+        actionIsOpen: 00000000000100000101
         actionStartIndex: 00000000050000000a0000000d000000130000001a0000001d000000200000002300000026000000
         actionHashCodes: 7d0dad037d0dad03603dd90560532301afff1105280cdd05280cdd05e9f73304e9f7330465c84b02
         unityObjectParams: []
@@ -9088,7 +9099,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1735520809
 MonoBehaviour:
@@ -10447,6 +10458,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066396877}
   m_CullTransparentMesh: 1
+--- !u!1001 &2076958219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1645424299913083829, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_Name
+      value: Drop_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716503351847659791, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 509.7514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 401.75183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.884583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301669938356577642, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135, type: 3}
+--- !u!1 &2076958220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1645424299913083829, guid: 1e9ecaa4eab9d8b4cb7de0c66bbb0135,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076958219}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125371491
 GameObject:
   m_ObjectHideFlags: 0
