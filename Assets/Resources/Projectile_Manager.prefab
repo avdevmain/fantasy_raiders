@@ -974,7 +974,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000000000
+        actionIsOpen: 000000000000000100
         actionStartIndex: 0000000001000000060000000b0000001000000014000000180000001e00000025000000
         actionHashCodes: 13227100d9b552026ba593016ba5930173ea9b0273ea9b02605323015552ad059ff80c02
         unityObjectParams: []
@@ -1183,7 +1183,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 30
         - useVariable: 0
           name: 
           tooltip: 
@@ -1643,7 +1643,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -1671,7 +1671,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 1
+    handleFixedUpdate: 0
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0

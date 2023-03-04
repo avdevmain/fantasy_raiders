@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 8331533926369334251}
   - component: {fileID: 2507717665272851971}
   m_Layer: 6
-  m_Name: Enemy_skeleton_char
+  m_Name: Enemy_skeleton_char_NAVMESH
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 01010101
+        actionIsOpen: 00000000
         actionStartIndex: 0000000004000000080000000c000000
         actionHashCodes: 87aa970087aa970087aa970087aa9700
         unityObjectParams: []
@@ -1910,7 +1910,7 @@ MonoBehaviour:
           name: no
           isSystemEvent: 0
           isGlobal: 0
-        toState: Wait for approach
+        toState: Cooldown 2
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1934,7 +1934,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 000100
+        actionIsOpen: 000001
         actionStartIndex: 00000000040000000b000000
         actionHashCodes: 36f094001bcdca0404d1d501
         unityObjectParams: []
@@ -2284,6 +2284,79 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000010000000000000000000000010000000200000003000000010000000100000002000000040000000500000002000000020000000300000006000000070000000300000003000000040000000500000004000000
         paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000
+    - name: Cooldown 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 661
+        y: 370.8828
+        width: 100.666664
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 1
+        toState: Wait for approach
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 48c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: cooldown
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: attack_anim
       isSystemEvent: 0
@@ -2939,21 +3012,21 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4138471995828164436}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.7
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 2
 --- !u!65 &4138471995828164437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4953,6 +5026,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetAgentDestinationAsGameObject
         - HutongGames.PlayMaker.Actions.SmoothLookAt
         - HutongGames.PlayMaker.Actions.MoveTowards
         - HutongGames.PlayMaker.Actions.GameObjectIsNull
@@ -4964,12 +5038,19 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0001000000
-        actionStartIndex: 0000000009000000100000001500000019000000
-        actionHashCodes: 4e661301fa0e54021565620536f094001bcdca04
+        - 
+        actionEnabled: 010000010101
+        actionIsOpen: 000000000000
+        actionStartIndex: 00000000030000000c00000013000000180000001c000000
+        actionHashCodes: f0eeac014e661301fa0e54021565620536f094001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
+        - useVariable: 1
+          name: target
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         - useVariable: 1
           name: target
           tooltip: 
@@ -5019,6 +5100,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -5031,6 +5120,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -5141,8 +5236,11 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c0000001c000000110000000f000000110000000f0000001700000014000000130000001c000000110000000f0000000f00000017000000130000001700000017000000110000000100000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 14000000130000000f00000014000000130000001c0000001c000000110000000f000000110000000f0000001700000014000000130000001c000000110000000f0000000f00000017000000130000001700000017000000110000000100000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
+        - gameObject
+        - destination
+        - triggerThreshold
         - gameObject
         - targetObject
         - targetPosition
@@ -5175,8 +5273,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000000000000000000000100000001000000000000000100000001000000020000000200000002000000030000000100000002000000020000000300000003000000000000000200000003000000040000000100000005000000060000000700000004000000050000000600000002000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000100000001000000000000000100000000000000010000000100000002000000000000000200000002000000020000000200000003000000040000000100000003000000020000000300000003000000000000000300000004000000050000000100000006000000070000000800000004000000050000000600000002000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: In Attack Range
       description: 
       colorIndex: 0
