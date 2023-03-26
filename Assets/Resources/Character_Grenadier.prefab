@@ -6078,7 +6078,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 1
-        toState: State 1
+        toState: HUD skill icon reset
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -6760,14 +6760,14 @@ MonoBehaviour:
         - finishEvent
         paramDataPos: 00000000010000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
-    - name: State 1
+    - name: HUD skill icon reset
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 60.085938
         y: 230.375
-        width: 100
+        width: 144
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -7061,7 +7061,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1

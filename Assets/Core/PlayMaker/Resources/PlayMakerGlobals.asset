@@ -75,29 +75,15 @@ MonoBehaviour:
   - PHOTON / ON REGION LIST RECEIVED
   - PHOTON / ON WEBRPC RESPONSE
   - PHOTON / ON PHOTON INSTANTIATE
-  - play_bttn_action
-  - play bttn pressed
-  - attack_test
-  - die
-  - die torso
-  - die head
-  - attack_test_melee
-  - game started
-  - attack_anim
-  - attack_melee_king
-  - attack_melee_knight
-  - join_room
-  - FINISHED
   - attack_grenadier
-  - join
-  - zone_damage
-  - skill_anim
   - grenadier_skill
-  - idle_anim
-  - walk_anim
-  - skill_fx
-  - hit_anim
+  - game started
+  - join_room
+  - attack_test
+  - attack_melee_knight
+  - select_char
+  - FINISHED
   - basic_rock_destroyed
   - basic_crate_destroyed
   - basic_box_destroyed
-  - add_resource
+  - join
